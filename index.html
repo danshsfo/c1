@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+<style type="text/css">
+
+p{font-size: 1.5em}
+
+#container{
+    width: 200px;
+    height: 200px;
+    border: 5px solid red;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: changeManagement;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes changeManagement {
+    0% { 
+        background-color: green;
+    }
+    50% { 
+        background-color: yellow;
+    }
+    100% { 
+        background-color: skyblue;
+    }
+}
+
+#inside{
+    display: inline-block;
+    font-size: 2em;
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Inside header 1. <br />Simple assignment to test GitHub and a web page, <br />"Hello World".</h1>
+<p>This is a paragraph.</p>
+
+<div id="container"><div id="inside">Hello :)</div></div>
+
+</body>
+</html>
